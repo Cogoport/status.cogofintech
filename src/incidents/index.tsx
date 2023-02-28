@@ -48,6 +48,9 @@ const IncidentsSection: NextPage = () => {
                     </div>
                 )
             }
+            {(!isIncidentsLoading && (monthlyIncidents as MonthlyIncident[]).length === 0) &&
+                <p className='mr-5 text-2xl font-semibold leading-6 text-gray-900'>No incident reported</p>
+            }
         </div>
     )
 }
