@@ -56,7 +56,7 @@ const ServicesSection: NextPage = () => {
                             <ul>
                                 {
                                     (data as Service[]).map(service => (
-                                        <li className='shadow-md bg-white p-5 mb-2 rounded-lg' key={service.id} >
+                                        <li className='shadow-md bg-white p-5 mb-5 rounded-lg' key={service.id} >
                                             <ServiceItem key={service.id} item={service} />
                                         </li>
                                     ))
